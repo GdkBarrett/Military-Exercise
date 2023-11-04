@@ -1,7 +1,6 @@
-let recruitName = `Morgan`;
-let recruitAge = 19;
-let recruitRank = `Private`;
-let recruitAgeNextYear = (recruitAge + 1);
+const recruitName = `Morgan`;
+const recruitAge = 19;
+const recruitRank = `Private`;
 
 // console.log (recruitName);
 // console.log (recruitAge);
@@ -9,7 +8,7 @@ let recruitAgeNextYear = (recruitAge + 1);
 // console.log (recruitAgeNextYear);
 
 if (recruitAge < 18) {console.log ('You are too young for the military!');}
-else if (recruitName === 'Rugen') {console.log ('My name is Inigo Montoya, you killed my father, prepare to die.');}
+else if (recruitName === 'Rugen' && recruitRank === 'Count') {console.log ('My name is Inigo Montoya, you killed my father, prepare to die.');}
 else if (recruitRank === 'Captain') {console.log (`Aye Aye Captain ${recruitName}`);}
-else if (recruitRank === 'Private' && recruitAge > 40) {console.log ('What have you been doing with your life?');}
-else {console.log (`Hello ${recruitRank} ${recruitName}, I cannot wait to celebrate your ${recruitAgeNextYear}th birthday next year!`);} 
+else if (recruitRank === 'Private' && recruitAge > 40) {console.log (`What have you been doing with your life ${recruitName}?`);}
+else {console.log (`Hello ${recruitRank} ${recruitName}, I cannot wait to celebrate your ${recruitAge + 1}th birthday next year!`);} 
